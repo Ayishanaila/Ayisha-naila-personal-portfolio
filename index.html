@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ayisha Naila - Information Technology Graduate, Python Developer, and Machine Learning Enthusiast. Explore my portfolio, projects, skills, and services.">
+  <meta name="author" content="Ayisha Naila">
+  <title>Ayisha Naila | IT Graduate & Software Developer Portfolio</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Header & Navigation Bar
+       ======================================================================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Ayisha Naila Home">
+        <span class="nav-logo-badge">&lt;AN/&gt;</span>
+        <span>Ayisha Naila</span>
+      </a>
+
+      <!-- Desktop & Mobile Nav Links -->
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#journey" class="nav-link">Education &amp; Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Theme Switcher & Mobile Toggle) -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <!-- Sun Icon (Dark Mode active, click for light) -->
+          <svg id="theme-icon-sun" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (Light Mode active, click for dark) -->
+          <svg id="theme-icon-moon" style="display:none;" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm" style="display:none;" id="nav-cta-btn">Hire Me</a>
+
+        <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Open mobile navigation" aria-expanded="false">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         Hero Section
+         ====================================================================== -->
+    <section id="hero" class="hero">
+      <div class="hero-glow-bg"></div>
+      <div class="container hero-grid">
+        
+        <!-- Left: Intro & Bio -->
+        <div class="hero-text">
+          <div class="hero-badge-available">
+            <span class="pulsing-dot"></span>
+            <span>Open to Software &amp; Tech Opportunities</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="hero-gradient-text">Ayisha Naila</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Information Technology Graduate with a passion for software development, Python programming, Machine Learning, and Computer Vision solutions.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore Projects</span>
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Get in Touch</span>
+            </a>
+            <a href="https://github.com/Ayishanaila" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" title="Visit GitHub Profile">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com/in/ayisha-naila" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" title="Visit LinkedIn Profile">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="hero-stat-item">
+              <h3>B.Tech IT</h3>
+              <p>First Class (7.27 CGPA)</p>
+            </div>
+            <div class="hero-stat-item">
+              <h3>Python &amp; ML</h3>
+              <p>Nest Cyber Campus Trained</p>
+            </div>
+            <div class="hero-stat-item">
+              <h3>British Council</h3>
+              <p>Certified English Proficiency</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Tech Profile Card Visual -->
+        <div class="hero-visual">
+          <div class="hero-card-wrapper">
+            <!-- Floating Badges -->
+            <div class="floating-badge badge-top-left">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" style="color:var(--primary);">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+              <span>Computer Vision &amp; AI</span>
+            </div>
+
+            <div class="floating-badge badge-bottom-right">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" style="color:var(--accent);">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+              <span>MySQL &amp; Databases</span>
+            </div>
+
+            <div class="hero-avatar-card">
+              <div class="hero-avatar-circle">
+                <!-- Tech Avatar SVG -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+
+              <h4>Ayisha Naila</h4>
+              <span class="role-pill">Software Developer &amp; IT Graduate</span>
+
+              <div class="hero-tech-chips">
+                <span class="hero-tech-chip">Python</span>
+                <span class="hero-tech-chip">OpenCV</span>
+                <span class="hero-tech-chip">Machine Learning</span>
+                <span class="hero-tech-chip">MySQL</span>
+                <span class="hero-tech-chip">Power BI</span>
+                <span class="hero-tech-chip">Java (OOP)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         About Section
+         ====================================================================== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Driven by Innovation, Powered by Code</h2>
+          <p class="section-subtitle">A glimpse into my background, academic journey, and passion for software engineering.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-content">
+            <h3>Turning complex challenges into elegant, efficient software solutions.</h3>
+            <p>
+              I am a motivated and analytical <strong>B.Tech Information Technology</strong> graduate from MEA Engineering College (Class of 2024, First Class). I possess hands-on experience in <strong>Python programming</strong>, <strong>MySQL database management</strong>, and applied <strong>machine learning</strong>.
+            </p>
+            <p>
+              My engineering philosophy revolves around building scalable, robust software solutions and continuously exploring emerging technologies. During my internship at <strong>Nest Cyber Campus</strong>, I honed core scripting, problem-solving, and software development best practices.
+            </p>
+            <p>
+              From designing real-time surveillance detection systems to predictive machine learning classifiers, I love developing end-to-end technology that delivers real value.
+            </p>
+
+            <div class="about-interests">
+              <h5>Interests &amp; Hobbies</h5>
+              <div class="interest-tags">
+                <span class="interest-tag">
+                  <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+                  Content Writing
+                </span>
+                <span class="interest-tag">
+                  <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M16.2 7.8l-2 6.3-6.4 2.1 2-6.3z"></path></svg>
+                  Open-Source Exploration
+                </span>
+                <span class="interest-tag">
+                  <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                  Athletics (Long Jump)
+                </span>
+                <span class="interest-tag">
+                  <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                  Languages: English &amp; Malayalam
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlight Feature Boxes -->
+          <div class="about-highlights">
+            <div class="highlight-box">
+              <div class="highlight-icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <h5>B.Tech in IT (First Class)</h5>
+              <p>MEA Engineering College, Perinthalmanna (2020 – 2024, CGPA: 7.27).</p>
+            </div>
+
+            <div class="highlight-box">
+              <div class="highlight-icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h5>Python Programming Intern</h5>
+              <p>Nest Cyber Campus, Kochi. Scripting &amp; application development best practices.</p>
+            </div>
+
+            <div class="highlight-box">
+              <div class="highlight-icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <circle cx="12" cy="8" r="7"></circle>
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                </svg>
+              </div>
+              <h5>British Council Certified</h5>
+              <p>English Language Proficiency with an Excellent Score assessment.</p>
+            </div>
+
+            <div class="highlight-box">
+              <div class="highlight-icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <h5>Tech Fest Participant</h5>
+              <p>IEEE MILEN 6.0 &amp; IEDC 3-Day Technical Fests at MEA Engineering College.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Skills & Expertise Section
+         ====================================================================== -->
+    <section id="skills" class="section" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Skills &amp; Expertise</span>
+          <h2 class="section-title">Technical Strengths &amp; Core Competencies</h2>
+          <p class="section-subtitle">A balanced blend of programming, intelligent systems, database engineering, and analytical tools.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Card 1: Programming Languages -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-card-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h4>Programming Languages</h4>
+            </div>
+            <div class="skill-items-list">
+              <span class="skill-badge">Python</span>
+              <span class="skill-badge">Java (OOP)</span>
+              <span class="skill-badge">HTML5</span>
+              <span class="skill-badge">CSS3</span>
+            </div>
+          </div>
+
+          <!-- Card 2: AI & Machine Learning -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-card-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M12 2a4 4 0 0 1 4 4c0 .8-.2 1.5-.7 2.1l1.4 1.4A6 6 0 0 0 18 6a6 6 0 0 0-12 0c0 1.3.4 2.5 1.1 3.5l1.4-1.4A4 4 0 0 1 8 6a4 4 0 0 1 4-4z"></path>
+                  <path d="M9 13.5V17a3 3 0 0 0 6 0v-3.5"></path>
+                  <line x1="12" y1="20" x2="12" y2="22"></line>
+                </svg>
+              </div>
+              <h4>Artificial Intelligence &amp; ML</h4>
+            </div>
+            <div class="skill-items-list">
+              <span class="skill-badge">Machine Learning</span>
+              <span class="skill-badge">Deep Learning</span>
+              <span class="skill-badge">Neural Networks</span>
+              <span class="skill-badge">NLP</span>
+              <span class="skill-badge">Scikit-Learn</span>
+              <span class="skill-badge">Model Deployment</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Computer Vision & Frameworks -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-card-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </div>
+              <h4>Computer Vision &amp; Frameworks</h4>
+            </div>
+            <div class="skill-items-list">
+              <span class="skill-badge">Computer Vision</span>
+              <span class="skill-badge">OpenCV</span>
+              <span class="skill-badge">Live Video Streaming</span>
+              <span class="skill-badge">Tkinter (GUI)</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Databases & Validation -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-card-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h4>Databases &amp; Architecture</h4>
+            </div>
+            <div class="skill-items-list">
+              <span class="skill-badge">MySQL</span>
+              <span class="skill-badge">Database Design</span>
+              <span class="skill-badge">Data Validation &amp; Accuracy</span>
+              <span class="skill-badge">Querying</span>
+            </div>
+          </div>
+
+          <!-- Card 5: Data Analysis & Tools -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-card-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+              <h4>Data Analytics &amp; BI</h4>
+            </div>
+            <div class="skill-items-list">
+              <span class="skill-badge">Power BI</span>
+              <span class="skill-badge">Pandas</span>
+              <span class="skill-badge">Data Analysis</span>
+              <span class="skill-badge">MS Excel (Advanced)</span>
+              <span class="skill-badge">Feature Engineering</span>
+            </div>
+          </div>
+
+          <!-- Card 6: Concepts & Tooling -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-card-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+              <h4>Tools, SDLC &amp; Methods</h4>
+            </div>
+            <div class="skill-items-list">
+              <span class="skill-badge">Data Structures</span>
+              <span class="skill-badge">OOP</span>
+              <span class="skill-badge">SDLC</span>
+              <span class="skill-badge">Git</span>
+              <span class="skill-badge">VS Code</span>
+              <span class="skill-badge">Canva</span>
+              <span class="skill-badge">Documentation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Services Section
+         ====================================================================== -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Services</span>
+          <h2 class="section-title">What I Can Do For You</h2>
+          <p class="section-subtitle">Tailored technical solutions crafted with analytical rigor, clean code, and user-centric design.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h4>Python &amp; Software Development</h4>
+            <p>Building clean, scalable scripts, automation workflows, and desktop GUI applications using Tkinter and OOP principles.</p>
+            <div class="service-features">
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <span>Automated Scripting &amp; Data Workflows</span>
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <span>Tkinter Graphical User Interfaces (GUI)</span>
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <span>Modular Object-Oriented Architecture</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <h4>Machine Learning &amp; Predictive Models</h4>
+            <p>Designing intelligent predictive models, data classification pipelines, and feature engineering with Scikit-learn and Pandas.</p>
+            <div class="service-features">
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <span>Classification &amp; Regression Models</span>
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <span>Data Preprocessing &amp; Feature Tuning</span>
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <span>Model Evaluation &amp; Accuracy Metrics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M23 7l-7 5 7 5V7z"></path>
+                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+              </svg>
+            </div>
+            <h4>Computer Vision &amp; Video Analytics</h4>
+            <p>Implementing real-time frame analysis, anomaly detection in video feeds, and OpenCV deep learning integration.</p>
+            <div class="service-features">
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <span>Real-Time CCTV Stream Analysis</span>
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <span>Unusual Activity &amp; Object Detection</span>
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <span>Instant API Alert Notification Integration</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <h4>Database Architecture &amp; MySQL</h4>
+            <p>Structuring relational schemas, ensuring high data accuracy, and creating performant queries for scalable apps.</p>
+            <div class="service-features">
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <span>Relational Schema Modeling</span>
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <span>Data Integrity &amp; Validation Rules</span>
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <span>Optimized SQL Queries &amp; CRUD Operations</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <h4>Data Analysis &amp; Visual Dashboards</h4>
+            <p>Transforming raw business data into actionable visual insights using Power BI, Pandas, and Advanced MS Excel.</p>
+            <div class="service-features">
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <span>Interactive Power BI Reports</span>
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <span>Advanced Excel Analysis &amp; Formulas</span>
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <span>Exploratory Trend &amp; Metric Discovery</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <h4>Technical Documentation &amp; SDLC</h4>
+            <p>Clear software specifications, technical writing, process flow documentation, and structured SDLC execution.</p>
+            <div class="service-features">
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <span>System Architecture Documentation</span>
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <span>British Council Certified English Quality</span>
+              </div>
+              <div class="service-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <span>Agile &amp; SDLC Best Practices</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Projects Section
+         ====================================================================== -->
+    <section id="projects" class="section" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio Projects</span>
+          <h2 class="section-title">Featured Engineering Projects</h2>
+          <p class="section-subtitle">Real-world systems combining Computer Vision, Machine Learning, and Relational Databases.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-banner project-banner-cctv">
+              <span class="project-year-badge">2024</span>
+              <div class="project-banner-icon">
+                <svg width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M23 7l-7 5 7 5V7z"></path>
+                  <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                </svg>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">Computer Vision</span>
+                <span class="project-tag">OpenCV</span>
+                <span class="project-tag">Deep Learning</span>
+                <span class="project-tag">Telegram API</span>
+                <span class="project-tag">Python</span>
+              </div>
+
+              <h3 class="project-title">Multiple Unusual Human Activity Detection &amp; Alert System</h3>
+              
+              <p class="project-description">
+                An intelligent real-time surveillance solution designed to detect critical security events like physical fights and unauthorized weapons in CCTV video feeds, triggering automated emergency alerts.
+              </p>
+
+              <div class="project-bullet-points">
+                <div class="project-bullet-item">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  <span>Processed live CCTV video streams using OpenCV and deep neural network models for real-time anomaly detection.</span>
+                </div>
+                <div class="project-bullet-item">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  <span>Built automated alert broadcasting via Telegram API to instantly notify authorities and eliminate constant manual monitoring.</span>
+                </div>
+                <div class="project-bullet-item">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  <span>Implemented end-to-end Python pipeline from input stream processing to threshold verification and event logging.</span>
+                </div>
+              </div>
+
+              <div class="project-footer">
+                <span style="font-size:0.85rem; color:var(--text-muted); font-weight:600;">Domain: AI &amp; Surveillance Security</span>
+                <a href="#contact" class="btn btn-secondary btn-sm">Inquire Details &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-banner project-banner-loan">
+              <span class="project-year-badge">2023</span>
+              <div class="project-banner-icon">
+                <svg width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">Machine Learning</span>
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Scikit-Learn</span>
+                <span class="project-tag">Pandas</span>
+                <span class="project-tag">MySQL</span>
+              </div>
+
+              <h3 class="project-title">Loan Prediction System</h3>
+              
+              <p class="project-description">
+                A predictive machine learning application designed to assess creditworthiness and automate loan approval decisions, significantly minimizing financial risk assessment bottlenecks.
+              </p>
+
+              <div class="project-bullet-points">
+                <div class="project-bullet-item">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  <span>Built classification models with scikit-learn to classify applicants by credit risk and automated approval probability.</span>
+                </div>
+                <div class="project-bullet-item">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  <span>Conducted data cleaning, imputation, outlier handling, and exploratory feature engineering using Pandas.</span>
+                </div>
+                <div class="project-bullet-item">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  <span>Structured relational database storage in MySQL for user profile storage, ensuring strict data validity and consistency.</span>
+                </div>
+              </div>
+
+              <div class="project-footer">
+                <span style="font-size:0.85rem; color:var(--text-muted); font-weight:600;">Domain: FinTech &amp; Machine Learning</span>
+                <a href="#contact" class="btn btn-secondary btn-sm">Inquire Details &rarr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Education & Experience Timeline Section
+         ====================================================================== -->
+    <section id="journey" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career &amp; Learning</span>
+          <h2 class="section-title">Experience &amp; Education</h2>
+          <p class="section-subtitle">Academic milestones, professional training, and validated certifications.</p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <!-- Internship Item -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h4 class="timeline-title">Python Programming Intern</h4>
+                <span class="timeline-period">Internship</span>
+              </div>
+              <h5 class="timeline-subtitle">Nest Cyber Campus &bull; Kochi, Kerala</h5>
+              <p class="timeline-details">
+                Completed immersive hands-on training in Python programming. Developed scripts, practical application modules, object-oriented software patterns, and established coding standards.
+              </p>
+            </div>
+          </div>
+
+          <!-- B.Tech Degree Item -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h4 class="timeline-title">B.Tech in Information Technology</h4>
+                <span class="timeline-period">2020 – 2024</span>
+              </div>
+              <h5 class="timeline-subtitle">MEA Engineering College &bull; Perinthalmanna, Kerala</h5>
+              <p class="timeline-details">
+                <strong>Graduated First Class with CGPA: 7.27</strong>. Comprehensive study of Data Structures &amp; Algorithms, Relational Database Management Systems (RDBMS), Operating Systems, Software Engineering Life Cycle, and AI/ML capstone development.
+              </p>
+            </div>
+          </div>
+
+          <!-- Higher Secondary Item -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h4 class="timeline-title">Higher Secondary Education (Science)</h4>
+                <span class="timeline-period">2017 – 2019</span>
+              </div>
+              <h5 class="timeline-subtitle">VHMHSS Morayur &bull; Kerala</h5>
+              <p class="timeline-details">
+                Achieved <strong>88.9%</strong> with a focus on Mathematics, Physics, Chemistry, and Computer Science fundamentals.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications & Achievements Sub-section -->
+        <div class="certifications-section">
+          <div class="section-header" style="margin-bottom: 2rem;">
+            <h3 style="font-size: 1.6rem; font-weight: 700;">Certifications &amp; Achievements</h3>
+          </div>
+
+          <div class="cert-grid">
+            <div class="cert-card">
+              <div class="cert-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+              </div>
+              <div>
+                <h5>Python Programming Certification</h5>
+                <p>Nest Cyber Campus, Kochi, Kerala</p>
+              </div>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <div>
+                <h5>English Language Proficiency</h5>
+                <p>British Council — Certified with Excellent Score</p>
+              </div>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+              </div>
+              <div>
+                <h5>MILEN 6.0 Technical Fest</h5>
+                <p>Participant &bull; IEEE Student Branch, MEA Engineering College</p>
+              </div>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              </div>
+              <div>
+                <h5>3-Day Technical Fest</h5>
+                <p>Participant &bull; IEDC, MEA Engineering College</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Contact Us Section
+         ====================================================================== -->
+    <section id="contact" class="section" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Contact Us</span>
+          <h2 class="section-title">Let's Connect &amp; Collaborate</h2>
+          <p class="section-subtitle">Interested in discussing a software project, developer role, or machine learning opportunity? Feel free to reach out!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Channels -->
+          <div class="contact-info-card">
+            <h3>Get In Touch</h3>
+            <p>
+              I am open to full-time positions, software development opportunities, freelance projects, and tech collaborations. Reach out directly via email, phone, or LinkedIn.
+            </p>
+
+            <div class="contact-channels">
+              <!-- Email -->
+              <div class="contact-channel-item">
+                <div class="channel-icon">
+                  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="channel-meta">
+                  <h5>Email Address</h5>
+                  <a href="mailto:ayishanaila3@gmail.com">ayishanaila3@gmail.com</a>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-channel-item">
+                <div class="channel-icon">
+                  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="channel-meta">
+                  <h5>Phone / WhatsApp</h5>
+                  <a href="tel:+919633943170">+91 9633943170</a>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="contact-channel-item">
+                <div class="channel-icon">
+                  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="channel-meta">
+                  <h5>Location</h5>
+                  <span>Malappuram, Kerala, India</span>
+                </div>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="contact-channel-item">
+                <div class="channel-icon">
+                  <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </div>
+                <div class="channel-meta">
+                  <h5>LinkedIn Profile</h5>
+                  <a href="https://linkedin.com/in/ayisha-naila" target="_blank" rel="noopener noreferrer">linkedin.com/in/ayisha-naila</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Card -->
+          <div class="contact-form-card">
+            <h3>Send Me a Message</h3>
+            <p>Fill out the form below and I will get back to you as soon as possible.</p>
+
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="form-name" class="form-label">Your Name *</label>
+                <input type="text" id="form-name" class="form-input" placeholder="e.g. John Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">Email Address *</label>
+                <input type="email" id="form-email" class="form-input" placeholder="name@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject" class="form-label">Subject</label>
+                <input type="text" id="form-subject" class="form-input" placeholder="Project Inquiry / Job Opportunity">
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Message *</label>
+                <textarea id="form-message" class="form-textarea" placeholder="Write your message or inquiry here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <span>Send Message</span>
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <div id="form-alert" class="form-alert" role="alert"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="nav-logo-badge" style="width:28px;height:28px;font-size:0.8rem;">&lt;AN/&gt;</span>
+        <span>Ayisha Naila &bull; Portfolio</span>
+      </div>
+
+      <p>&copy; <span id="current-year">2026</span> Ayisha Naila. All rights reserved.</p>
+
+      <div class="footer-socials">
+        <a href="https://github.com/Ayishanaila" target="_blank" rel="noopener noreferrer" class="btn-icon" title="GitHub" aria-label="GitHub Profile">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+          </svg>
+        </a>
+        <a href="mailto:ayishanaila3@gmail.com" class="btn-icon" title="Email" aria-label="Send Email">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/ayisha-naila" target="_blank" rel="noopener noreferrer" class="btn-icon" title="LinkedIn" aria-label="LinkedIn Profile">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+        </a>
+        <a href="#hero" class="btn-icon" title="Back to top" aria-label="Back to top">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
