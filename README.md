@@ -1,38 +1,56 @@
 # Ayisha Naila - Personal Portfolio Website
 
-A responsive personal portfolio website showcasing my software engineering projects, technical skills, services, and academic background.
+A modern, responsive personal portfolio website designed and developed for **Ayisha Naila**, showcasing software engineering projects, technical skills, services, and academic background.
 
 🌐 **Live Demo:** [https://ayishanaila.github.io/Ayisha-naila-personal-portfolio/](https://ayishanaila.github.io/Ayisha-naila-personal-portfolio/)
 
 ---
 
-## 🚀 Features
+## 🌟 Features
 
-- **Responsive Design:** Optimized for mobile, tablet, and desktop viewports.
-- **Dark & Light Mode:** Seamless theme toggling with persistent state.
-- **Interactive Navigation:** Smooth scrolling and active section scroll-spy indicator.
+- **Dark & Light Mode:** Toggleable theme with saved user preference in `localStorage`.
+- **Responsive Design:** Mobile-first layout optimized for smartphones, tablets, and desktops.
+- **Interactive Navigation:** Smooth scrolling with dynamic active section indicator (`IntersectionObserver`).
 - **Showcase Sections:**
-  - **About Me:** Academic background (B.Tech in IT First Class) and industry internship experience.
-  - **Skills & Expertise:** Categorized tech stack (Python, Java OOP, OpenCV, Scikit-learn, MySQL, Power BI, Git).
-  - **Services:** Tailored software engineering, ML modeling, computer vision, and database architecture offerings.
-  - **Featured Projects:** In-depth showcases of the *Unusual Human Activity Detection & Alert System* and the *Loan Prediction System*.
-  - **Experience & Education Timeline:** Milestones, credentials, and British Council certification.
-  - **Contact Us:** Direct communication channels and interactive contact form.
+  - **About Me:** Professional background, education (First Class B.Tech IT), and personal interests.
+  - **Skills & Expertise:** Categorized cards for Programming Languages, AI & ML, Computer Vision, Databases, and Tools.
+  - **Services:** Tailored technical offerings in Python development, machine learning, computer vision, data analysis, and documentation.
+  - **Featured Projects:** In-depth showcases for:
+    - *Multiple Unusual Human Activity Detection & Alert System (2024)* (OpenCV, Deep Learning, Telegram API)
+    - *Loan Prediction System (2023)* (Scikit-Learn, Pandas, MySQL)
+  - **Career & Education Timeline:** Academic milestones (MEA Engineering College, VHMHSS Morayur), Nest Cyber Campus internship, and certifications.
+  - **Contact Us:** Direct contact cards (Email, Phone, Location, LinkedIn) and interactive contact form.
 
 ---
 
 ## 🛠️ Built With
 
-- **HTML5** — Semantic, accessible web structure.
-- **CSS3** — Custom properties, flexbox, CSS grid, glassmorphism effects, and transitions.
-- **JavaScript (ES6+)** — Client-side theme switching, mobile drawer menu, and validation.
-- **SVG Graphics** — Vector icons and scalable imagery.
+- **HTML5:** Semantic structure, accessible markup, inline SVG icons.
+- **CSS3:** Custom properties (CSS variables), glassmorphism, CSS Grid & Flexbox, smooth transitions.
+- **JavaScript (ES6):** Theme management, mobile drawer navigation, scroll-spy, and contact form handling.
 
 ---
 
-## 📬 Contact
+## 🚀 Local Development
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Ayishanaila/Ayisha-naila-personal-portfolio.git
+   cd Ayisha-naila-personal-portfolio
+   ```
+
+2. **Open the website:**
+   - Simply double-click `index.html` to open it in your browser.
+   - Or start a local server:
+     ```bash
+     python -m http.server 3000
+     ```
+     Navigate to `http://localhost:3000`.
+
+---
+
+## 📬 Contact & Connect
 
 - **Email:** [ayishanaila3@gmail.com](mailto:ayishanaila3@gmail.com)
 - **LinkedIn:** [linkedin.com/in/ayisha-naila](https://linkedin.com/in/ayisha-naila)
-- **Phone:** +91 9633943170
 - **Location:** Malappuram, Kerala, India

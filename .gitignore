@@ -3,9 +3,9 @@
 Thumbs.db
 desktop.ini
 
-# Editor / IDE Files
+# Editor & IDE settings
 .vscode/
 .idea/
 
-# Local logs & temporary files
+# Local logs
 *.log
